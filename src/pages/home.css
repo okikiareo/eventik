@@ -1,0 +1,126 @@
+.home {
+    padding: 2rem;
+    min-height: 100vh;
+    background: #fafafa;
+    font-family: "Inter", sans-serif;
+  }
+  
+  .home-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .home-header h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  
+  .home-header input {
+    padding: 0.6rem 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 250px;
+  }
+  
+  .event-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .event-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  .event-card:hover {
+    transform: translateY(-4px);
+  }
+  
+  .event-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+  }
+  
+  .event-info {
+    padding: 1rem;
+  }
+  
+  .event-info h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.3rem;
+  }
+  
+  .event-info p {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 0.2rem;
+  }
+  
+  .event-info span {
+    font-weight: 600;
+    color: #000;
+  }
+  
+  /* Modal Styles */
+  .cart-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .cart-content {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  .cart-content h3 {
+    margin-bottom: 0.5rem;
+  }
+  
+  .pay-btn {
+    background: #0a8f08;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    margin-top: 1rem;
+    cursor: pointer;
+  }
+  
+  .pay-btn:hover {
+    background: #097707;
+  }
+  
+  @media (min-width: 1024px) {
+    .home-header h2 {
+      font-size: 2rem;
+    }
+  }
+  @media (max-width: 500px){
+    .home {
+       padding: 0rem !important;
+    }
+    .home-header h2 {
+      font-size: 1.2rem;
+      font-weight: 600;
+  }
+  }
