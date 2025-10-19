@@ -1,10 +1,10 @@
 // src/utils/swwipePayment.js
 export const initiatePayment = (email, amount, metadata = {}) => {
     try {
-      if (!window.Netpay) {
-        console.error("Swwipe SDK not loaded. Check your script link.");
-        return;
-      }
+      // if (!window.Netpay) {
+      //   console.error("Swwipe SDK not loaded. Check your script link.");
+      //   return;
+      // }
   
       // Convert to kobo
       const payment = window.Netpay.createPayment({
@@ -13,6 +13,7 @@ export const initiatePayment = (email, amount, metadata = {}) => {
         email,
         merchantKey: "B3Do2YrewjJbh16rqt5UgmDC", // your test public key
         metadata,
+        mode: "test",
         callback: function (response) {
           console.log("Payment successful:", response);
           alert("✅ Payment successful!");

@@ -14,7 +14,7 @@ const events = [
     title: "The Arts Festival",
     date: "10th Aug 2025 - 10:00am",
     location: "TBS, Lagos Nigeria",
-    price: 50,
+    price: 100,
     image: event1,
   },
   {
@@ -22,7 +22,7 @@ const events = [
     title: "Music, Dance & Poetry",
     date: "12th Aug 2025 - 4:00pm",
     location: "Odua, Lagos Nigeria",
-    price: 60,
+    price: 100,
     image: event2,
   },
   {
@@ -30,7 +30,7 @@ const events = [
     title: "Art Convention",
     date: "15th Aug 2025 - 11:00am",
     location: "Eko Hotel, Lagos",
-    price: 70,
+    price: 100,
     image: event3,
   },
   {
@@ -47,7 +47,7 @@ const Home = () => {
   const [selectedEvent, setSelectedEvent] = useState(null);
   const handleBuy = () => {
     try {
-      initiatePayment("okikiareo@gmail.com", 50, {
+      initiatePayment("okikiareo@gmail.com", 100, {
         firstName: "Okiki",
         lastName: "Areo",
       });
